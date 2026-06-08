@@ -1,0 +1,72 @@
+#projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20%;
+    list-style: none;
+    justify-content: center;
+}   
+header{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:space-between;
+    margin-bottom:20px;
+}
+header li{
+    display: inline-block;
+    margin:0 10px;
+    padding-top:10px;
+}
+#contact{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+   
+}
+#contact li{
+    display: inline-block;
+    margin:0 10px;
+    padding-top:50px;
+    justify-content: left;
+}
+#contact a{
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: #f0f0f0;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 8px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+#contact a:hover {
+    background: url('download.jpg') no-repeat center center;
+    color: #333;
+}
+#contact h2{
+    margin-left:20px;
+}
+#projects li {
+    display: inline-block;
+}
+#projects h2{
+    margin-left:20px;
+}
+#projects a {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: #f0f0f0;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 8px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+#projects a:hover {
+    background: url('download.jpg') no-repeat center center;
+    color: #333;
+}
