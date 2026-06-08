@@ -1,27 +1,55 @@
-#projects ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20%;
-    list-style: none;
-    justify-content: center;
-}   
+body{
+    font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient( #0f1724 0%, #272b35 40%, #020617 100%);
+    color: #e6eef8;
+}
+   
 header{
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     display:flex;
     flex-wrap:wrap;
     gap:20px;
     justify-content:space-between;
     margin-bottom:20px;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
 }
 header li{
     display: inline-block;
     margin:0 10px;
     padding-top:10px;
 }
+header a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+a{ color: #d6e9ff }
+header a:hover {
+    color: #c8c8c8;
+}
+#profile{
+    background-color: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+#about {
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: white;
+}
 #contact{
     display:flex;
     flex-wrap:wrap;
     gap:20px;
-   
+    background-image: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+   color: white;
+    padding: 20px;
+    border-radius: 8px;
 }
 #contact li{
     display: inline-block;
@@ -33,11 +61,11 @@ header li{
     display: block;
     width: 200px;
     height: 50px;
-    background-color: #f0f0f0;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     text-align: center;
     line-height: 50px;
     text-decoration: none;
-    color: #333;
+    color: white;
     border-radius: 8px;
     transition: background 0.3s ease, color 0.3s ease;
 }
@@ -48,8 +76,28 @@ header li{
 #contact h2{
     margin-left:20px;
 }
+#projects {
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+    border-radius: 8px;
+    padding:20px;
+    margin-top: 20px;;
+    color: white;
+}
+#projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    list-style: none;
+    justify-content: center;
+    
+}
 #projects li {
     display: inline-block;
+    max-width: 300px;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 8px;
+    padding:0 20px;
 }
 #projects h2{
     margin-left:20px;
@@ -65,8 +113,111 @@ header li{
     color: #333;
     border-radius: 8px;
     transition: background 0.3s ease, color 0.3s ease;
+    margin:0 40px;
 }
 #projects a:hover {
     background: url('download.jpg') no-repeat center center;
     color: #333;
+}
+#projects p{
+    max-width: 300px;
+}
+ img {
+    margin:0 75px;
+     transition: filter 0.3s ease, transform 0.3s ease;
+ }
+ img:hover{
+    filter:grayscale(100%);
+    scale:1.1;
+   
+ }
+
+
+.card-panel{
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    color: white;
+}
+
+.profile-grid{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.profile-photo{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255,255,255,0.12);
+   
+}
+
+.role{
+     font-weight:600;
+      opacity:0.95 }
+.lead{ 
+    margin-top:8px;
+     opacity:0.9 }
+.muted{ 
+    opacity:0.85;
+    margin-bottom:10px }
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    align-items: stretch;
+}
+
+.project-card{
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 14px;
+    border-radius: 10px;
+    min-height: 140px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.project-card .repo-name{ 
+    margin: 0 0 8px 0; 
+    font-size:1.05rem }
+.project-card .repo-name a{ 
+    color: #fff; 
+    text-decoration: none }
+.project-card .repo-desc{ 
+    font-size:0.95rem; 
+    opacity:0.95; 
+    margin-bottom:10px }
+.repo-meta{ 
+    display:flex; 
+    gap:10px; 
+    align-items:center; 
+    font-size:0.9rem }
+.repo-meta .lang{ 
+    background: rgba(255,255,255,0.06); 
+    padding:4px 8px; border-radius:6px }
+
+.projects-footer{ 
+    margin-top:12px; 
+    text-align:center }
+.more-link{ 
+    display:inline-block; 
+    padding:8px 14px; 
+    border-radius:8px; 
+    background: rgba(255,255,255,0.06); 
+    color:#fff; 
+    text-decoration:none }
+.more-link:hover{ 
+    background: rgba(255,255,255,0.12) }
+
+.error{ color: #ffdddd; background: rgba(255,0,0,0.06); padding:8px; border-radius:6px }
+
+/* Responsive tweaks */
+@media (max-width:600px){
+    .profile-grid{ grid-template-columns: 1fr; text-align:center }
+    .profile-photo{ margin: 0 auto }
 }

@@ -1,45 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">    
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Personalizat</title>
+    <title>Site Personalizat — Neluțu</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <body>
-        <header>
-            <h1>Site despre Nelutu</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">Despre mine</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div>
-            <section id="about">
-                <h2>Despre mine</h2>
-                <p>Sunt Nelutu, un pasionat de tehnologie și programare. Îmi place să învăț lucruri noi și să împărtășesc cunoștințele mele cu alții.</p>
-            </section>
-            <section id="contact">
-                <h2>Contact</h2>
-                <ul>
-                    <li><a href="mailto:nelutuban@48gmail.com">Trimite un email</a></li>
-                    <li><a href="https://www.linkedin.com/in/nelutu-ban-602b2b260/" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://github.com/nelutuinfinite?tab=repositories" target="_blank">GitHub</a></li>
-                </ul>
-            </section>
-            <section id="projects">
-            <h2>Proiecte</h2>
+    <script src="script.js" defer></script>
+    </head>
+<body data-github-user="nelutuinfinite">
+    <header>
+        <h1>Site despre Nelutu</h1>
+        <nav>
             <ul>
-                <li><a href="https://github.com/nelutuinfinite/Student">Proiectul Java Lab</a>
-                <p>Descrierea proiectului Java Lab.</p></li>
-                <li><a href="https://github.com/OrsAdi/ITECWEBdev" target="_blank">Proiectul Web Dev Itec</a>
-                <p>Descrierea proiectului Web Dev Itec.</p></li>
-                <li><a href="https://github.com/eduardioanbischin-dotcom/Proiect-Web-"target="_blank">Proiectul Web Dev Seminar</a>
-                <p>Descrierea proiectului Web Dev Seminar.</p></li>
+                <li><a href="#profile">Profil</a></li>
+                <li><a href="#portfolio">Portofoliu</a></li>
+                <li><a href="#experience">Experiență</a></li>
+                <li><a href="#education">Educație</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile" class="card-panel">
+            <div class="profile-grid">
+                <img class="profile-photo" src="https://github.com/nelutuinfinite.png" alt="Poză profil">
+                <div>
+                    <h2>Neluțu Ban</h2>
+                    <p class="role">Student de Inginerie</p>
+                    <p class="lead">Student pasionat de tehnologie. Îmi place să învăț tehnologii noi, să rezolv probleme și să construiesc soluții inovatoare.</p>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="card-panel">
+            <h2>Portofoliu</h2>
+            <p class="muted">Proiecte încărcate din GitHub </p>
+            <div id="projects-container" class="projects-grid">
+               
+            </div>
+            <div id="projects-footer" class="projects-footer"></div>
+        </section>
+
+        <section id="experience" class="card-panel">
+            <h2>Experiență de muncă</h2>
+            <ul>
+                <li>Dosent exist</li>
+                
             </ul>
         </section>
-    </div>
-</body> 
+
+        <section id="education" class="card-panel">
+            <h2>Educație</h2>
+            <ul>
+                <li>Facultatea de Inginerie,Tehnologia Informatiei — 2024‑Prezent</li>
+                <li>Liceul Teoretic "General Dragalina" — 2020‑2024</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="card-panel">
+            <h2>Contact</h2>
+            <ul>
+                <li><img src="email-computer-icons-gmail-email.jpg" alt="Email Icon" width="30" height="30"><a href="mailto:nelutuban@48gmail.com">Trimite un email</a></li>
+                <li><img src="Linkedin_Icon.avif" alt="LinkedIn Icon" width="30" height="30"><a href="https://www.linkedin.com/in/nelutu-ban-602b2b260/" target="_blank">LinkedIn</a></li>
+                <li><img src="git_icon.png" alt="GitHub Icon" width="30" height="30"><a href="https://github.com/nelutuinfinite?tab=repositories" target="_blank">GitHub</a></li>
+            </ul>
+        </section>
+    </main>
+
+</body>
 </html>
